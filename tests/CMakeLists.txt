@@ -1,6 +1,6 @@
 # tests/CMakeLists.txt
 
-find_package(Boost COMPONENTS unit_test_framework REQUIRED)
+find_package(Boost COMPONENTS unit_test_framework)
 
 if (Boost_FOUND)
     
