@@ -11,7 +11,7 @@ We use [vcpkg](https://github.com/microsoft/vcpkg) from Microsoft to build on mu
 To install CMake:
 
 ```bash
-sudo apt install cmake		# replace 'apt' with your distro package manager
+sudo apt install cmake # replace 'apt' with your distro package manager
 ```
 
 To build the program:
