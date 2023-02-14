@@ -1,11 +1,13 @@
 # setupp
 
-My go-to setup for a C++ project (from [Hanno Hildenbrandt](https://github.com/HHildenbrandt)).
+My go-to setup for a C++ project (from [Hanno Hildenbrandt](https://github.com/HHildenbrandt)). It has two important features:
+* It uses [CMake](https://cmake.org) to be able to build on multiple platforms
+* It comes into two flavors, user and developer. The user-configuration does the minimum to give the user a working program. The developer-configuration also builds all the tests and downloads (with [vcpkg](https://github.com/rscherrer/vcpkg)) the necessary libraries (here [Boost.Test](https://github.com/boostorg/test)) to do so.
 
 ## Prerequisites
 
-* A C++20 compiler
-* (optional) [CMake](docs/CMAKE.md) version 3.16 or higher
+* A C++20 compiler (e.g. [GCC](https://gcc.gnu.org) or [Clang](https://clang.llvm.org))
+* (optional) CMake version 3.16 or higher (click [here](docs/CMAKE.md) for how to install)
 
 ## Build
 
