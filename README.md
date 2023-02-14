@@ -14,6 +14,7 @@ My go-to setup for a C++ project (from [Hanno Hildenbrandt](https://github.com/H
 Here are instructions to build with CMake, but you can compile the source code with the tools of your choice.
 
 (Click [here](docs/BUILD.md) to build as developer.)
+(Click [here](docs/PEREGRINE.md) to build on the [Peregrine](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/peregrine-hpc-cluster?lang=en) cluster.)
 
 ### Linux, MacOS
 

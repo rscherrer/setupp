@@ -13,6 +13,7 @@ Build the program:
 ```bash
 git clone git@github.com:rscherrer/setupp.git
 cd setupp
+cp CMakeLists_user.txt CMakeLists.txt # for user config, or CMakeLists_devel.txt CMakeLists.txt for developer config
 git submodule update --init --remote
 mkdir build && cd build
 cmake ..
