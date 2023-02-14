@@ -2,25 +2,23 @@
 
 My go-to setup for a C++ project (from [Hanno Hildenbrandt](https://github.com/HHildenbrandt)).
 
+## Prerequisites
+
+* A C++20 compiler
+* (optional) [CMake](docs/CMAKE.md) version 3.16 or higher
+
 ## Build
 
-We use [vcpkg](https://github.com/microsoft/vcpkg) from Microsoft to build on multiple platforms.
+Here are instructions to build with CMake, but you can compile the source code with the tools of your choice.
+
+(Click [here](docs/BUILD.md) to build as developer.)
 
 ### Linux, MacOS
 
-To install CMake:
-
-```bash
-sudo apt install cmake # replace 'apt' with your distro package manager
-```
-
-To build the program:
-
-```bash
+```shell
 git clone git@github.com:rscherrer/setupp.git
 cd setupp
-git submodule add https://github.com/microsoft/vcpkg
-git submodule update --init --remote
+cp CMakeLists_user.txt CMakeLists.txt # user configuration
 mkdir build && cd build
 cmake ..
 cmake --build .
@@ -30,16 +28,10 @@ The executable `setupp` is built in `../bin/`.
 
 ### Windows
 
-[Download](https://github.com/Kitware/CMake/releases/download/v3.23.0/cmake-3.23.0-windows-x86_64.msi) and install CMake. 
-Make sure you select the option "Add CMake to the system PATH for the current user" when asked by the installer.
-
-To build the program:
-
-```bash
+```cmd
 git clone git@github.com:rscherrer/setupp.git
 cd setupp
-git submodule add https://github.com/microsoft/vcpkg
-git submodule update --init --remote
+copy CMakeLists_user.txt CMakeLists.txt :: user configuration
 mkdir build
 cd build
 cmake ..
@@ -50,13 +42,13 @@ The executable `setupp.exe` is built in `../bin/`.
 
 ### IDEs
 
-Many IDEs support CMake out of the box. 'Open folder' should do the trick...
+Many IDEs support CMake out of the box. "Open folder" should do the trick...
 You can use CMake to generate the input files for your favorite IDE too:
 
-```bash
+```shell
 git clone git@github.com:rscherrer/setupp.git
-cd setupp
-git submodule update --init --recursive
+cd speciom
+cp CMakeLists_user.txt CMakeLists.txt # user configuration
 mkdir build
 cd build
 # Generate VisualStudio project files

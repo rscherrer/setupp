@@ -1,5 +1,7 @@
 # src/CMakeLists.txt
 
+# Replace "setupp" with the name of your project
+
 # collect source and header files inside the current directory
 # a bit lazy to do this via 'globbing expressions' but hey...
 file(GLOB_RECURSE src 
