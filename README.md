@@ -4,6 +4,8 @@ My go-to setup for a C++ project (after [Hanno Hildenbrandt](https://github.com/
 * It uses [CMake](https://cmake.org) to be able to build on multiple platforms
 * It comes into two flavors, **user** and **developer**. The user-configuration does the minimum to give the user a working program. The developer-configuration also builds all the tests and downloads (with [vcpkg](https://github.com/rscherrer/vcpkg)) the necessary libraries (here [Boost.Test](https://github.com/boostorg/test)) to do so.
 
+**Important:** Replace `setupp` with the name of your project wherever needed.
+
 ## Prerequisites
 
 * A C++20 compiler (e.g. [GCC](https://gcc.gnu.org) or [Clang](https://clang.llvm.org))
