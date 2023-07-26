@@ -80,3 +80,10 @@ cp CMakeLists_user.txt CMakeLists.txt
 ```
 
 This is to make sure to build the fast, optimized, release version of the program. This is important as the developer (debug) version is not optimized and requires extra libraries to run all the tests, so it should not be used by the user.
+
+## Projects using this setup
+
+* [speciome](https://github.com/rscherrer/speciome)
+* [brachypode](https://github.com/rscherrer/brachypode)
+* [reschoice](https://github.com/rscherrer/reschoice)
+* [hemigene](https://github.com/rscherrer/hemigene)
