@@ -2,13 +2,14 @@
 
 ### Linux, MacOS
 
-On Linux/MacOs, use:
-
 ```bash
 sudo apt install cmake # replace 'apt' with your distro package manager
 ```
 
 ### Windows
 
-[Download](https://github.com/Kitware/CMake/releases/download/v3.23.0/cmake-3.23.0-windows-x86_64.msi) and make sure to select the option "Add CMake to the system PATH for the current user" when asked by the installer.
+Download the latest version at this [link](https://cmake.org/download/) and make sure to select the option "Add CMake to the system PATH for the current user" when asked by the installer.
 
+### Note
+
+You may need to change the version of CMake specified in the main `CMakeLists.txt` file to match the version you just installed.
