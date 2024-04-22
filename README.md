@@ -61,7 +61,7 @@ You can use CMake to generate the input files for your favorite IDE too (here a 
 
 ```shell
 git clone git@github.com:rscherrer/setupp.git
-cd speciom
+cd setupp
 cp CMakeLists_user.txt CMakeLists.txt # user configuration
 mkdir build
 cd build
