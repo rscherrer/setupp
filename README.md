@@ -21,6 +21,8 @@ The following shows how to download this repository and build the program `setup
 
 If you do not need the developer configuration at all, you may set `CMakeLists.txt` as `CMakeLists_user.txt` and get rid of `CMakeLists_devel.txt`, `CMakeLists_user.txt`, `tests/` and `vcpkg.json`.
 
+If you just want an ultra-basic **user** version of this setup check this [page](https://github.com/rscherrer/setupp-basic).
+
 All of the build details should be saved in the `./build/` folder during the building process.
 
 (Click [here](docs/BUILD.md) to build as **developer**.)
