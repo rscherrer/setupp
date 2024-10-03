@@ -6,18 +6,18 @@ My go-to setup for a C++ project (after [Hanno Hildenbrandt](https://github.com/
 
 ## About
 
-This setup is intended for biologists who need C++ in their research (e.g. for simulation studies or fast implementations of some analytical pipelines). It is made to build command-line interface programs and does not use anything fancy like GPUs. As such, it is pretty basic, but it does the job for many straightforward applications. You can use this setup for your own program by simply downloading it and tweaking it to suit your needs. You may get rid of `README.md` and the `docs/` folder, which only contain documentation for this repository, and write your own documentation instead.
+This setup is intended for biologists who need C++ in their research (e.g. for simulation studies or fast implementations of some analytical pipelines). It is made to build command-line interface programs and does not use anything fancy like GPUs. As such, it is pretty basic, but it does the job for many straightforward applications. You can use this setup for your own program by simply downloading it and tweaking it to suit your needs. You may get rid of `README.md` and the `doc/` folder, which only contain documentation for this repository, and write your own documentation instead.
 
 **Important:** you will need to replace `setupp` with the name of your project wherever needed (most importantly in `CMakeLists.txt` but also in `vcpkg.json` if you use the developer build configuration, see below).
 
 ## Prerequisites
 
 * A C++20 compiler (e.g. [GCC](https://gcc.gnu.org) or [Clang](https://clang.llvm.org))
-* CMake version 3.16 or higher (click [here](docs/CMAKE.md) for how to install)
+* CMake version 3.16 or higher (click [here](doc/CMAKE.md) for how to install)
 
 ## Build
 
-The following shows how to download this repository and build the program `setupp` according to the **user** configuration on different platforms. This should be the most common one or at least the one used by the end user who wishes to compile this code. It compiles the code in release mode with some optimization flags. However, during software development the developer may require a testing framework or to build in debug mode, which is much slower. For this there is the **developer** configuration, which downloads and installs the testing library `Boost.Test` via `vcpkg` (follow instructions [here](docs/BUILD.md) for that).
+The following shows how to download this repository and build the program `setupp` according to the **user** configuration on different platforms. This should be the most common one or at least the one used by the end user who wishes to compile this code. It compiles the code in release mode with some optimization flags. However, during software development the developer may require a testing framework or to build in debug mode, which is much slower. For this there is the **developer** configuration, which downloads and installs the testing library `Boost.Test` via `vcpkg` (follow instructions [here](doc/BUILD.md) for that).
 
 If you do not need the developer configuration at all, you may set `CMakeLists.txt` as `CMakeLists_user.txt` and get rid of `CMakeLists_devel.txt`, `CMakeLists_user.txt`, `tests/` and `vcpkg.json`.
 
@@ -25,7 +25,7 @@ If you just want an ultra-basic **user** version of this setup check this [page]
 
 All of the build details should be saved in the `./build/` folder during the building process.
 
-(Click [here](docs/BUILD.md) to build as **developer**.)
+(Click [here](doc/BUILD.md) to build as **developer**.)
 
 ### Linux, MacOS
 
@@ -60,9 +60,9 @@ The executable `setupp.exe` is built in `../bin/`.
 
 ### High Performance Computing Cluster
 
-(Click [here](docs/PEREGRINE.md) to build on the [Peregrine](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/peregrine-hpc-cluster?lang=en) cluster --- replaced by Habrok in 2023.)
+(Click [here](doc/PEREGRINE.md) to build on the [Peregrine](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/peregrine-hpc-cluster?lang=en) cluster --- replaced by Habrok in 2023.)
 
-(Click [here](docs/HABROK.md) to build on the [Habrok](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/peregrine-hpc-cluster?lang=en) cluster.)
+(Click [here](doc/HABROK.md) to build on the [Habrok](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/peregrine-hpc-cluster?lang=en) cluster.)
 
 ### IDEs
 
