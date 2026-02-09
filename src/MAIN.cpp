@@ -9,7 +9,7 @@
 // Main function
 void doMain() {
     
-    // End of simulation
+    // Do something
     std::cout << "Hello world!" << std::endl;
 	
 }

@@ -1,7 +1,8 @@
 #ifndef SETUPP_TESTS_TESTUTILS_HPP
 #define SETUPP_TESTS_TESTUTILS_HPP
 
-// This header is for the tst (test) namespace, which contains functions used in unit tests.
+// This header is for the tst (test) namespace, which handy functions
+// used in unit tests.
 
 #include <vector>
 #include <string>

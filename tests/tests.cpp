@@ -16,3 +16,5 @@ BOOST_AUTO_TEST_CASE(useCase) {
     BOOST_CHECK_NO_THROW(doMain());
 
 }
+
+// And many more...
