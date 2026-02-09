@@ -1,0 +1,6 @@
+{
+  "name": "setupp",
+  "dependencies": [
+    "boost-test"
+  ]
+}
